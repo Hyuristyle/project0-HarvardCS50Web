@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Droid+Sans+Mono&effect=canvas-print");
+/*@import url("https://fonts.googleapis.com/css?family=Tangerine");*/
+
+@font-face {
+	font-family: "HamletOrNot";
+	src: url(../fonts/HamletOrNot.ttf) format("truetype");
+}
+
+body {
+	background-color: #ffd20d;
+	margin: 0px;
+	font-family: "Open Sans", Sans-Serif;
+	font-size: 100%;
+}
+
+.container {
+	display: grid;
+	grid-template-rows: 126px auto auto 74px 119px;
+	grid-template-areas:
+		"header"
+		"content"
+		"easter-egg"
+		"disclaimer"
+		"sources";
+	height: 100vh;
+	align-items: center;
+}
+
+.header {
+	grid-area: header;
+	padding: 24px;
+	font-size: 24px;
+	
+	display: grid;
+	grid-template-areas: "logo name menu";
+	grid-template-columns: 84px auto auto;
+	grid-column-gap: 24px;
+}
+
+.logo {
+	grid-area: logo;
+
+/*	For <figure> tag
+	background-image: url('../../static/images/Logo.png');
+	background-repeat: no-repeat;
+	background-size: 81px 78px;
+*/
+}
+
+.logo img {
+	/*vertical-align: bottom;*/
+	display: block;
+}
+
+.name {
+	grid-area: name;
+
+	line-height: 78px;
+	vertical-align: middle;
+
+	font-weight: bold;
+
+	color: #262600;
+}
+
+.logo a:hover, .name a:hover {
+	background-color: initial;
+}
+
+.menu {
+	grid-area: menu;
+	
+	padding-right: 24px;
+	text-align: right;
+	font-size: 20px;
+
+	line-height: 78px;
+	vertical-align: middle;
+}
+
+.menu-item {
+	padding: 0px 12px;
+	
+	color: #262600;
+}
+
+.menu-item.selected {
+	display: inline;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	background-color: rgba(0, 0, 0, 0.05);
+	border-radius: 5px;
+
+/*	text-decoration: underline;*/
+}
+
+a:active {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.content {
+	grid-area: content;
+	
+	text-align: center;
+}
+
+.content h1 {
+	margin: 24px auto;
+	color: white;
+	font-size: 64px;
+}
+
+.yellow-fever-text {
+	/*background-image: url('../../static/images/Yellow Fever Background.png');*/
+	background-color: rgba(0, 0, 0, 0.17);
+	border-radius: 5px;
+	width: 600px;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+	height: 98px;
+	line-height: 98px;
+	
+	text-align: center;
+	font-family: Droid Sans Mono;
+	color: white;
+}
+
+.font-effect-canvas-print {
+	mask-image: url('//themes.googleusercontent.com/static/patterns/canvas-print.png');
+}
+
+.content h4 {
+	margin: 24px;
+
+	color: #c14346;
+	font-size: 48px;
+}
+
+.disclaimer {
+	grid-area: disclaimer;
+
+	padding: 24px;
+	padding-bottom: 12px;
+
+	color: #262600;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.sources {
+	grid-area: sources;
+
+	padding: 12px 24px;
+	/*padding-top: 12px;*/
+	
+	background-color: #262600;
+	background-image: url("../../static/images/footer_shadow.png");
+	background-repeat: repeat-x;
+
+	color: #808080;
+	font-size: 14px;
+	/*font-weight: bold;*/
+	/*line-height: 1;*/
+}
+
+.sources a:hover {
+	text-decoration: underline;
+}
+
+.easter-egg {
+	grid-area: easter-egg;
+	padding: 24px;
+	display: none;
+	font-family: HamletOrNot, serif;
+	font-size: 20px;
+	text-align: center;
+}
+
+button, .button {
+	display: inline-block;
+	background-color: Transparent;
+
+	border: 2px solid #262600;
+	border-radius: 5px;
+
+	outline: none;
+
+	margin: 12px;
+	padding: 10px 20px;
+
+	color: #262600;
+
+	font-size: 24px;
+	font-weight: bold;
+
+	cursor: pointer;
+}
+
+button:hover, .button:hover {
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+button:active, .button:active {
+	background-color: rgba(0, 0, 0, 0.1);
+}
