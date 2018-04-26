@@ -19,7 +19,7 @@ body {
 		"phone-bottom"
 		"footer";
 	/*height: 100vh;*/
-	align-items: flex-start;
+	align-items: baseline;
 }
 
 .header {
@@ -31,6 +31,8 @@ body {
 	grid-template-columns: 36% auto 36%;
 
 	color: #222222;
+
+	background-color: #f9f9f9
 
 	/*border: 1px solid red;*/
 }
@@ -58,7 +60,7 @@ body {
 }
 
 .menu {
-	font-size: 18px;
+	font-size: 0.9em;
 
 	line-height: 58px;
 	vertical-align: middle;
@@ -103,8 +105,6 @@ a:active {
 	background-repeat: no-repeat;
 
 	/*text-align: center;*/
-
-	filter: invert(100%);
 }
 
 .phone img {
@@ -117,6 +117,8 @@ a:active {
 .phone.top {
 	grid-area: phone-top;
 	background-position: top;
+
+	border-bottom: 1px solid lightgray;
 }
 
 .phone.bottom {
@@ -135,15 +137,14 @@ a:active {
 
 	grid-template-columns: auto auto auto;
   	grid-template-rows: auto auto auto;
-  	grid-column-gap: 3px;
-	grid-row-gap: 3px;
+  	grid-gap: 3px;
 
 	margin: 0px auto;
 
   	justify-content: center;
 
-  	background-color: black;
-	border: 3px solid black;
+	border-top: 1px solid gray;
+	/*border-bottom: 2px solid gray;*/
 }
 
 .content img {
@@ -176,7 +177,7 @@ a:active {
 	text-align: center;
 
 	color: #444444;
-	font-size: 14px;
+	font-size: 0.7em;
 	font-weight: bold;
 
 	/*filter: invert(100%);*/
@@ -185,6 +186,8 @@ a:active {
 .footer a:hover {
 	text-decoration: underline;
 }
+
+/* Custom Button */
 
 button, .button {
 	display: inline-block;
@@ -212,4 +215,17 @@ button:hover, .button:hover {
 
 button:active, .button:active {
 	background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries */
+
+@media (max-width: 839px) {
+	#about-link {
+		display: none;
+	}
+
+	#about-icon {
+		font-size: 1.4em;
+		vertical-align: sub;
+	}
 }
