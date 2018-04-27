@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
+/* For debugging the layout */
+* {
+	/*border: 1px solid red;*/
+}
+
 body {
-	background-color: #f2f2f2;
+	background-color: #f9f9f9;
 
 	margin: 0px;
 	
@@ -11,12 +16,11 @@ body {
 
 .container {
 	display: grid;
-	grid-template-rows: 46px auto auto auto 45px;
+	grid-template-rows: 46px auto auto auto;
 	grid-template-areas:
 		"header"
 		"phone-top"
-		"content"
-		"phone-bottom"
+		"content-row"
 		"footer";
 	/*height: 100vh;*/
 	align-items: baseline;
@@ -34,10 +38,6 @@ body {
 
 	background-color: #f9f9f9
 
-	/*border: 1px solid red;*/
-}
-
-* {
 	/*border: 1px solid red;*/
 }
 
@@ -141,15 +141,22 @@ a:active {
 	border-bottom: 1px solid lightgray;
 }
 
-.phone.bottom {
-	grid-area: phone-bottom;
-	background-position: bottom;
+.content-row {
+	grid-area: content-row;
+	display: grid;
+
+	grid-template-columns: auto auto auto;
+	grid-template-areas: ". content .";
+
+	border-top: 1px solid darkgray;
+	border-bottom: 1px solid darkgray;
+	/* padding: 3px 0px; */
+
+	background-color: #808080;
 }
 
 .content {
 	grid-area: content;
-
-	/*padding: 0px 3px;*/
 	
 	text-align: center;
 
@@ -162,9 +169,6 @@ a:active {
 	margin: 0px auto;
 
   	justify-content: center;
-
-	border-top: 1px solid gray;
-	/*border-bottom: 2px solid gray;*/
 }
 
 .content img {
@@ -191,16 +195,17 @@ a:active {
 .footer {
 	grid-area: footer;
 
-	padding: 12px 24px;
-	/*padding-top: 12px;*/
+	padding: 12px 20px;
+
+	border-top: 1px solid lightgray;
+
+	background-color: #f9f9f9;
 
 	text-align: center;
 
 	color: #444444;
 	font-size: 0.7em;
 	font-weight: bold;
-
-	/*filter: invert(100%);*/
 }
 
 .footer a:hover {
@@ -237,6 +242,7 @@ button:active, .button:active {
 	background-color: rgba(0, 0, 0, 0.1);
 }
 
+/* -------------------------------------------------------------------------------------------- */
 /* Media Queries */
 
 /* Up to 839px */
@@ -273,18 +279,14 @@ button:active, .button:active {
 	}
 
 	.phone.top {
-		border-bottom-width: 2px;
+		/*border-bottom-width: 2px;*/
 	}
 
 	.content {
-		border-top-width: 2px;
+		/*border-top-width: 2px;*/
 	}
 
 	.phone img {
 		width: 200px;
-	}
-
-	.phone.bottom {
-		display: none;
 	}
 }
