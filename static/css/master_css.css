@@ -87,6 +87,26 @@ body {
 	text-underline-position: under;
 }
 
+#left-menu-icon {
+	display: none;
+}
+
+#tools-link {
+	display: unset;
+}
+
+#tools-icon {
+	display: unset;
+}
+
+#learning-link {
+	display: unset;
+}
+
+#learning-icon {
+	display: unset;
+}
+
 a {
 	text-decoration: none;
 	color: inherit;
@@ -219,6 +239,7 @@ button:active, .button:active {
 
 /* Media Queries */
 
+/* Up to 839px */
 @media (max-width: 839px) {
 	#about-link {
 		display: none;
@@ -233,19 +254,23 @@ button:active, .button:active {
 		display: none;
 	}
 
-	/*#tools-icon {
-		font-size: 1.4em;
-		vertical-align: sub;
-	}*/
+	#tools-icon {
+		display: none;
+	}
 
 	#learning-link {
 		display: none;
 	}
 
-	/*#learning-icon {
+	#learning-icon {
+		display: none;
+	}
+
+	#left-menu-icon {
+		display: unset;
 		font-size: 1.4em;
 		vertical-align: sub;
-	}*/
+	}
 
 	.phone.top {
 		border-bottom-width: 2px;
