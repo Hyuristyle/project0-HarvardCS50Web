@@ -246,4 +246,12 @@ button:active, .button:active {
 		font-size: 1.4em;
 		vertical-align: sub;
 	}*/
+
+	.phone img {
+		width: 200px;
+	}
+
+	.phone.bottom {
+		display: none;
+	}
 }
