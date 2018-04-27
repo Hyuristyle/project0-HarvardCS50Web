@@ -228,4 +228,22 @@ button:active, .button:active {
 		font-size: 1.4em;
 		vertical-align: sub;
 	}
+
+	#tools-link {
+		display: none;
+	}
+
+	/*#tools-icon {
+		font-size: 1.4em;
+		vertical-align: sub;
+	}*/
+
+	#learning-link {
+		display: none;
+	}
+
+	/*#learning-icon {
+		font-size: 1.4em;
+		vertical-align: sub;
+	}*/
 }
