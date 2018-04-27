@@ -247,6 +247,14 @@ button:active, .button:active {
 		vertical-align: sub;
 	}*/
 
+	.phone.top {
+		border-bottom-width: 2px;
+	}
+
+	.content {
+		border-top-width: 2px;
+	}
+
 	.phone img {
 		width: 200px;
 	}
