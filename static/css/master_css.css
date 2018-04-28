@@ -244,17 +244,47 @@ a:active {
 	}
 }
 
-/* From 840px and up */
+/* Up to 320px: Slightly smaller font size */
+@media (max-width: 320px) {
+	.menu.mobile {
+		font-size: 0.8em;
+	}
+}
+
+/* Never show mobile menu from 840px and up */
 @media (min-width: 840px) {
 	#menu-expansion {
 		display: none;
 	}
 }
 
-/* Up to 320px */
-@media (max-width: 320px) {
-	.menu.mobile {
-		font-size: 0.8em;
+/* Increase Grid Gaps from 1440px and up */
+@media (min-width: 1440px) {
+	.content {
+		grid-gap: 24px;
+	}
+}
+
+/* Increase Grid Gaps from 1920px and up */
+@media (min-width: 1920px) {
+	.content {
+		grid-gap: 32px;
+	}
+
+	body {
+		font-size: 150%;
+	}
+
+	.menu-item	{
+		padding: 0px 54px;
+	}
+
+	.menu.left {
+		text-align: center;
+	}
+
+	.menu.right {
+		text-align: center;
 	}
 }
 
