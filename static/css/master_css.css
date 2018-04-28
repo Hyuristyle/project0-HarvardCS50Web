@@ -23,7 +23,6 @@ body {
 		"menu-expansion"
 		"content-row"
 		"footer";
-	/*height: 100vh;*/
 	align-items: baseline;
 }
 
@@ -38,8 +37,6 @@ body {
 	color: #222222;
 
 	background-color: #f9f9f9
-
-	/*border: 1px solid red;*/
 }
 
 .name {
@@ -88,7 +85,7 @@ body {
 	text-underline-position: under;
 }
 
-#left-menu-icon {
+#bars-menu-icon {
 	display: none;
 }
 
@@ -124,24 +121,19 @@ a:active {
 	/* text-underline-position: unset; */
 }
 
-.phone {
+.phone-top {
+	grid-area: phone-top;
+	background-position: top;
 	background-repeat: no-repeat;
 
-	/*text-align: center;*/
+	border-bottom: 1px solid lightgray;
 }
 
-.phone img {
+.phone-top img {
 	/*vertical-align: bottom;*/
 	display: block;
 
 	margin: auto;
-}
-
-.phone.top {
-	grid-area: phone-top;
-	background-position: top;
-
-	border-bottom: 1px solid lightgray;
 }
 
 #menu-expansion {
@@ -151,14 +143,14 @@ a:active {
 	color: #f9f9f9;
 }
 
-#menu-expansion .menu.left {
+.menu.mobile {
 	display: grid;
 	grid-template-columns: auto auto auto;
 
 	text-align: center;
 }
 
-#menu-expansion .menu-item {
+.menu.mobile .menu-item {
 	padding: 0px;
 }
 
@@ -208,8 +200,6 @@ a:active {
 }
 
 .photo-grid-item {
-	/*vertical-align: bottom;*/
-	/*display: block;*/
 	width: 337px;
 }
 
@@ -233,6 +223,58 @@ a:active {
 	text-decoration: underline;
 }
 
+/* -------------------------------------------------------------------------------------------- */
+/* Media Queries */
+
+/* Up to 839px */
+@media (max-width: 839px) {
+	.header #about-link {
+		display: none;
+	}
+
+	.header #tools-link {
+		display: none;
+	}
+
+	.header #learning-link {
+		display: none;
+	}
+
+	#bars-menu-icon {
+		display: inline-block;
+		font-size: 1.4em;
+		vertical-align: sub;
+	}
+
+	.phone-top img {
+		width: 200px;
+		height: 12px;
+	}
+
+	.header {
+		grid-template-columns: 22% auto 22%;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+}
+
+/* From 840px and up */
+@media (min-width: 840px) {
+	#menu-expansion {
+		display: none;
+	}
+}
+
+/* Up to 320px */
+@media (max-width: 320px) {
+	.menu.mobile {
+		font-size: 0.8em;
+	}
+}
+
+/* -------------------------------------------------------------------------------------------- */
 /* Custom Button */
 
 button, .button {
@@ -261,56 +303,4 @@ button:hover, .button:hover {
 
 button:active, .button:active {
 	background-color: rgba(0, 0, 0, 0.1);
-}
-
-/* -------------------------------------------------------------------------------------------- */
-/* Media Queries */
-
-/* Up to 839px */
-@media (max-width: 839px) {
-	.header #about-link {
-		display: none;
-	}
-
-	.header #tools-link {
-		display: none;
-	}
-
-	.header #learning-link {
-		display: none;
-	}
-
-	#left-menu-icon {
-		display: inline-block;
-		font-size: 1.4em;
-		vertical-align: sub;
-	}
-
-	.phone.top {
-		/*border-bottom-width: 2px;*/
-	}
-
-	.content {
-		/*border-top-width: 2px;*/
-	}
-
-	.phone img {
-		width: 200px;
-		height: 12px;
-	}
-
-	.header {
-		grid-template-columns: 22% auto 22%;
-	}
-
-	a:hover {
-		text-decoration: none;
-	}
-}
-
-/* Up to 320px */
-@media (max-width: 320px) {
-	#menu-expansion .menu {
-		font-size: 0.8em;
-	}
 }
