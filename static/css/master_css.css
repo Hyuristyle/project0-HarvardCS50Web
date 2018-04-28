@@ -10,7 +10,7 @@ body {
 
 	margin: 0px;
 	
-	font-family: "Open Sans", Sans-Serif;
+	font-family: "Open Sans", Helvetica, Arial, Sans-Serif;
 	font-size: 100%;
 }
 
@@ -260,15 +260,7 @@ button:active, .button:active {
 		display: none;
 	}
 
-	#tools-icon {
-		display: none;
-	}
-
 	#learning-link {
-		display: none;
-	}
-
-	#learning-icon {
 		display: none;
 	}
 
@@ -288,5 +280,6 @@ button:active, .button:active {
 
 	.phone img {
 		width: 200px;
+		height: 12px;
 	}
 }
