@@ -85,24 +85,8 @@ body {
 	text-underline-position: under;
 }
 
-#bars-menu-icon {
+#bars-menu-link {
 	display: none;
-}
-
-#tools-link {
-	display: unset;
-}
-
-#tools-icon {
-	display: unset;
-}
-
-#learning-link {
-	display: unset;
-}
-
-#learning-icon {
-	display: unset;
 }
 
 a {
@@ -228,19 +212,19 @@ a:active {
 
 /* Up to 839px */
 @media (max-width: 839px) {
-	.header #about-link {
+	#header-about-link {
 		display: none;
 	}
 
-	.header #tools-link {
+	#header-tools-link {
 		display: none;
 	}
 
-	.header #learning-link {
+	#header-learning-link {
 		display: none;
 	}
 
-	#bars-menu-icon {
+	#bars-menu-link {
 		display: inline-block;
 		font-size: 1.4em;
 		vertical-align: sub;
