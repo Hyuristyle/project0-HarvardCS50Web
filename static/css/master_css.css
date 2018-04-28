@@ -116,7 +116,7 @@ a {
 a:hover {
 	text-decoration-line: underline;
 	text-underline-position: under;
-	color: #666666;
+	color: inherit;
 }
 
 a:active {
