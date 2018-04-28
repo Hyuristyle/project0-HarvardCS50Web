@@ -14,12 +14,13 @@ body {
 	font-size: 100%;
 }
 
-.container {
+.page-container {
 	display: grid;
 	grid-template-rows: 46px auto auto auto;
 	grid-template-areas:
 		"header"
 		"phone-top"
+		"menu-expansion"
 		"content-row"
 		"footer";
 	/*height: 100vh;*/
@@ -115,6 +116,7 @@ a {
 a:hover {
 	text-decoration-line: underline;
 	text-underline-position: under;
+	color: #666666;
 }
 
 a:active {
@@ -140,6 +142,24 @@ a:active {
 	background-position: top;
 
 	border-bottom: 1px solid lightgray;
+}
+
+#menu-expansion {
+	grid-area: menu-expansion;
+	
+	background-color: #222222;
+	color: #f9f9f9;
+}
+
+#menu-expansion .menu.left {
+	display: grid;
+	grid-template-columns: auto auto auto;
+
+	text-align: center;
+}
+
+#menu-expansion .menu-item {
+	padding: 0px;
 }
 
 .content-row {
@@ -248,25 +268,20 @@ button:active, .button:active {
 
 /* Up to 839px */
 @media (max-width: 839px) {
-	#about-link {
+	.header #about-link {
 		display: none;
 	}
 
-	#about-icon {
-		font-size: 1.4em;
-		vertical-align: sub;
-	}
-
-	#tools-link {
+	.header #tools-link {
 		display: none;
 	}
 
-	#learning-link {
+	.header #learning-link {
 		display: none;
 	}
 
 	#left-menu-icon {
-		display: unset;
+		display: inline-block;
 		font-size: 1.4em;
 		vertical-align: sub;
 	}
@@ -290,5 +305,12 @@ button:active, .button:active {
 
 	a:hover {
 		text-decoration: none;
+	}
+}
+
+/* Up to 320px */
+@media (max-width: 320px) {
+	#menu-expansion .menu {
+		font-size: 0.8em;
 	}
 }

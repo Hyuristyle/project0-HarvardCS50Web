@@ -5,27 +5,27 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- CSS -->
-		<link rel="stylesheet" type="text/css" href="static/css/master_css.css">
-
 		<!-- Font Awesome -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
 		<!-- Bootstrap -->
-		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="static/css/master_css.css">
     </head>
     <body>
-        <div class="container">
+        <div class="page-container">
 			<div class="header">
 				<div class="menu left">
 					<a href="/Tools" id="tools-link" class="menu-item" data-toggle="tooltip" data-placement="bottom" title="Apps and Other Tools">
-						<i id="tools-icon" class="fas fa-box-open"></i> <span id="tools-text">TOOLS</span>
+						<i id="tools-icon" class="fas fa-box-open"></i> TOOLS
 					</a>
 					<a href="/Learning" id="learning-link" class="menu-item" data-toggle="tooltip" data-placement="bottom" title="Improve Your Photography">
-						<i id="learning-icon" class="fab fa-leanpub"></i> <span id="learning-text">LEARNING</span>
+						<i id="learning-icon" class="fab fa-leanpub"></i> LEARNING
 					</a>
 
-					<a href="#" class="menu-item">
+					<a href="#menu-expansion" data-toggle="collapse" aria-controls="menu-expansion" aria-expanded="false" aria-label="Toggle navigation" class="collapsed menu-item">
 						<i id="left-menu-icon" class="fas fa-bars"></i>
 					</a>
 				</div>
@@ -39,12 +39,29 @@
 				<div class="menu right">
 					<!-- On About Page -->
 					<!-- <div class="menu-item activated">About</div> -->
-					<a href="/About" class="menu-item"><i id="about-icon" class="fas fa-info-circle"></i> <span id="about-link">ABOUT</span></a>
+					<a href="/About" id="about-link" class="menu-item">
+						<i id="about-icon" class="fas fa-info-circle"></i> ABOUT
+					</a>
 				</div>
 			</div>
 
 			<div class="phone top">
 				<img src="static/images/phone_top.png">
+			</div>
+
+			<div id="menu-expansion" class="collapse">
+				<div class="menu left">
+					<a href="/Tools" id="tools-link" class="menu-item" data-toggle="tooltip" data-placement="bottom" title="Apps and Other Tools">
+						<i id="tools-icon" class="fas fa-box-open"></i> <span id="tools-text">TOOLS</span>
+					</a>
+					<a href="/Learning" id="learning-link" class="menu-item" data-toggle="tooltip" data-placement="bottom" title="Improve Your Photography">
+						<i id="learning-icon" class="fab fa-leanpub"></i> <span id="learning-text">LEARNING</span>
+					</a>
+    
+    				<a href="/About" class="menu-item">
+                        <i id="about-icon" class="fas fa-info-circle"></i> <span id="about-link">ABOUT</span>
+    				</a>
+				</div>
 			</div>
 			
 			<div class="content-row">
@@ -101,5 +118,10 @@
 	  			Copyright © 2018 Hyuri Pimentel. All rights reserved.
 	  		</div>
 		</div>
+
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     </body>
 </html>
