@@ -160,12 +160,12 @@ a:active {
 	display: grid;
 
 	grid-template-columns: auto auto auto;
-  	grid-template-rows: auto auto auto;
-  	grid-gap: 3px;
+	grid-template-rows: auto auto auto;
+	grid-gap: 3px;
 
 	margin: 0px auto;
 
-  	justify-content: center;
+	justify-content: center;
 }
 
 .content img {
@@ -205,6 +205,105 @@ a:active {
 
 .footer a:hover {
 	text-decoration: underline;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+/* Photo Viewer customizations (Bootstrap) */
+
+.modal {
+	background-color: rgba(0, 0, 0, .9);
+	color: white;
+
+	padding-right: 0px !important;
+}
+
+.modal-dialog {
+	display: none;
+}
+
+.close {
+	line-height: 20px;
+}
+
+.viewer-container {
+	grid-area: viewer-container;
+	display: grid;
+	grid-template-rows: 44px auto 44px;
+	grid-template-areas:
+	"viewer-header"
+	"viewer-photo"
+	"viewer-label";
+
+	align-self: center;
+
+	height: 100%;
+}
+
+.viewer-header {
+	grid-area: viewer-header;
+}
+
+.viewer-photo {
+	grid-area: viewer-photo;
+
+	display: grid;
+}
+
+.viewer-label {
+	font-size: 80%;
+	text-align: center;
+
+	line-height: 44px;
+}
+
+.viewer-photo img {
+	display: block;
+	
+	max-height: 100%;
+	max-width: 100%;
+
+	margin: auto;
+}
+
+.modal-content {
+	background-color: rgba(0, 0, 0, 0);
+	color: white;
+
+	font-size: 14px;
+
+	width: auto;
+}
+
+.modal-body {
+	max-width: max-content;
+	margin: 32px;
+	padding: 0px;
+}
+
+.modal-footer {
+	padding: 0px;
+	border-top: 0px;
+}
+
+.close {
+	color: white;
+	font-weight: normal;
+}
+
+.close:hover {
+	color: white;
+}
+
+.close:active {
+	color: white;
+}
+
+.close:visited {
+	color: white;
+}
+
+.close:focus {
+	color: white;
 }
 
 /* -------------------------------------------------------------------------------------------- */
