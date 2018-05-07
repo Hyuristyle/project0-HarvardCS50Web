@@ -215,6 +215,14 @@ a:active {
 	color: white;
 
 	padding-right: 0px !important;
+
+	top: unset;
+	bottom: unset;
+	left: unset;
+	right: unset;
+
+	width: 100vw;
+	height: 100vh;
 }
 
 .modal-dialog {
