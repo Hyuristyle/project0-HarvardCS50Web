@@ -341,6 +341,10 @@ a:active {
 	a:hover {
 		text-decoration: none;
 	}
+
+	.close {
+		outline: none !important;
+	}
 }
 
 /* Up to 320px: Slightly smaller font size */
