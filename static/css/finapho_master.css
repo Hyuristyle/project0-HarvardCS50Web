@@ -207,6 +207,11 @@ a:active {
 	text-decoration: underline;
 }
 
+ul {
+	list-style-type: disc;
+	text-align: left;
+}
+
 /* -------------------------------------------------------------------------------------------- */
 /* Photo Viewer customizations (Bootstrap) */
 
