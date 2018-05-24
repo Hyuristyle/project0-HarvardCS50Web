@@ -118,6 +118,8 @@ a:active {
 	display: block;
 
 	margin: auto;
+
+	width: 230px;
 }
 
 #menu-expansion {
@@ -396,7 +398,7 @@ ul {
 	}
 
 	.phone-top img {
-		width: 350px;
+		width: 320px;
 	}
 }
 
