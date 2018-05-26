@@ -94,6 +94,10 @@ a {
 	color: inherit;
 }
 
+.content a {
+	text-decoration-line: underline;
+}
+
 a:hover {
 	text-decoration-line: underline;
 	text-underline-position: under;
