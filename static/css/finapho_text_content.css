@@ -1,75 +1,59 @@
 .page-container {
-	height: 100vh;
+  height: 100vh;
 }
 
 .content-row {
-	grid-template-columns: auto;
-    grid-template-areas: "content";
-
-	padding: 6px 0px;
-
-	align-self: stretch;
-
-	background-color: hsl(0, 0%, 94%);
+  grid-template-columns: auto;
+  grid-template-areas: "content";
+  padding: 6px 0px;
+  align-self: stretch;
+  background-color: #f0f0f0;
 }
 
 .content {
-	display: block;
-
-	width: 800px;
+  display: block;
+  width: 800px;
 }
-
 .content h1 {
-	margin: 1.5rem 0px 0px 0px;
+  margin: 1.5rem 0px 0px 0px;
 }
-
 .content h5 {
-	text-align: left;
-	font-weight: bold;
+  text-align: left;
+  font-weight: bold;
 }
-
 .content p {
-	text-align: justify;
+  text-align: justify;
 }
-
 .content p img {
-	float: left;
-	margin-right: 12px;
-
-	width: 100px;
-
-	border: 2px solid #222222;
-	border-radius: 15px;
+  float: left;
+  margin-right: 12px;
+  width: 100px;
+  border: 2px solid #222222;
+  border-radius: 15px;
 }
 
 .col-items {
-	text-align: left;
-	font-size: 16px;
-	margin-bottom: 32px;
+  text-align: left;
+  font-size: 16px;
+  margin-bottom: 32px;
 }
-
 .col-items img {
-	 height: 90px;
+  height: 90px;
 }
 
-/* -------------------------------------------------------------------------------------------- */
-/* Media Queries */
-
-/* Up to 856px */
 @media (max-width: 856px) {
-	.content {
-		width: auto;
-		margin: 0px 20px;
-	}
-
-	.content p img {
-		margin-right: 16px;
-	}
+  .content {
+    width: auto;
+    margin: 0px 20px;
+  }
+  .content p img {
+    margin-right: 16px;
+  }
 }
-
-/* Up to 570px */
 @media (max-width: 570px) {
-	.content h1 {
-		margin: 1.5rem 0px 1.5rem 0px;
-	}
+  .content h1 {
+    margin: 1.5rem 0px 1.5rem 0px;
+  }
 }
+
+/*# sourceMappingURL=../css/finapho_text_content.css.map */

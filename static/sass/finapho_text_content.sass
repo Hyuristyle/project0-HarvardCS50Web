@@ -1,0 +1,68 @@
+$content-bg-color: hsl(0, 0%, 94%)
+$fg-color: #222222
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+.page-container
+	height: 100vh
+
+.content-row
+	grid-template-columns: auto
+	grid-template-areas: "content"
+
+	padding: 6px 0px
+
+	align-self: stretch
+
+	background-color: $content-bg-color
+
+.content
+	display: block
+
+	width: 800px
+
+	h1
+		margin: 1.5rem 0px 0px 0px
+
+	h5
+		text-align: left
+		font-weight: bold
+
+	p
+		text-align: justify
+
+		img
+			float: left
+			margin-right: 12px
+
+			width: 100px
+
+			border: 2px solid $fg-color
+			border-radius: 15px
+
+.col-items
+	text-align: left
+	font-size: 16px
+	margin-bottom: 32px
+
+	img
+		height: 90px
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+// Media Queries
+
+// Up to 856px
+@media (max-width: 856px)
+	.content
+		width: auto
+		margin: 0px 20px
+
+		p
+			img
+				margin-right: 16px
+
+// Up to 570px
+@media (max-width: 570px)
+	.content
+		h1
+			margin: 1.5rem 0px 1.5rem 0px
