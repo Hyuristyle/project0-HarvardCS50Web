@@ -31,22 +31,39 @@ $fg-color: #222222
 	p
 		text-align: justify
 
-		img
-			float: left
-			margin-right: 12px
+.profile-pic
+	display: block
+	float: left
+	margin-right: 12px
 
-			width: 100px
+	width: 100px
 
-			border: 2px solid $fg-color
-			border-radius: 15px
+	border: 2px solid $fg-color
+	border-radius: 15px
+
+%miniature
+	display: block
+	float: none
+	height: 100px
+	margin: 0px auto
+
+.video-miniature
+	@extend %miniature
+
+.keepcase-miniature
+	@extend %miniature
+	border-radius: 5px
+
+	border: 2px solid $fg-color
+
+.channel-miniature
+	@extend %miniature
+	border-radius: 50%
 
 .col-items
-	text-align: left
+	text-align: center
 	font-size: 16px
 	margin-bottom: 32px
-
-	img
-		height: 90px
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 // Media Queries
