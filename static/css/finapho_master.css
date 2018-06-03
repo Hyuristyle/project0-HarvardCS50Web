@@ -58,12 +58,23 @@ body {
 .menu.mobile .menu-item {
   padding: 0px;
 }
+.menu.mobile .menu-item.activated {
+  background-color: #404040;
+  /* border-radius: 50px */
+}
+.menu.mobile .menu-item.activated span {
+  text-decoration: none;
+}
 
 .menu-item {
   padding: 0px 12px;
 }
 .menu-item.activated {
-  text-decoration-line: underline;
+  display: inline-block;
+}
+.menu-item.activated span {
+  font-weight: bold;
+  text-decoration: underline;
   text-underline-position: under;
 }
 

@@ -80,12 +80,24 @@ body
 		.menu-item
 			padding: 0px
 
+			&.activated
+				span
+					text-decoration: none
+
+				background-color: hsl(0, 0%, 25%)
+
+				/* border-radius: 50px */
+
 .menu-item
 	padding: 0px 12px
 
 	&.activated
-		text-decoration-line: underline
-		text-underline-position: under
+		span
+			font-weight: bold
+			text-decoration: underline
+			text-underline-position: under
+
+		display: inline-block
 
 #bars-menu-link
 	display: none
