@@ -69,13 +69,19 @@ body {
 .menu-item {
   padding: 0px 12px;
 }
+.menu-item:hover {
+  text-decoration: none;
+  text-underline-position: unset;
+}
 .menu-item.activated {
   display: inline-block;
+  background-color: #f0f0f0;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  margin-top: -2px;
+  /* border-radius: 15px */
 }
 .menu-item.activated span {
   font-weight: bold;
-  text-decoration: underline;
-  text-underline-position: under;
 }
 
 #bars-menu-link {
@@ -99,7 +105,7 @@ a:active {
   grid-area: phone-top;
   background-position: top;
   background-repeat: no-repeat;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 .phone-top img {
   display: block;
@@ -151,7 +157,7 @@ a:active {
 .footer {
   grid-area: footer;
   padding: 12px 20px;
-  border-top: 1px solid lightgray;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
   background-color: #fafafa;
   text-align: center;
   color: #444444;
