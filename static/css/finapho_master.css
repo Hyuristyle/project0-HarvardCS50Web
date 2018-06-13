@@ -125,7 +125,7 @@ a:active {
   display: block;
   margin: auto;
   width: 230px;
-  margin-bottom: -1px;
+  margin-bottom: -2px;
 }
 
 #menu-expansion {
@@ -139,7 +139,6 @@ a:active {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-areas: ". content .";
-  border-top: 1px solid darkgray;
   border-bottom: 1px solid darkgray;
   background-color: #808080;
 }
