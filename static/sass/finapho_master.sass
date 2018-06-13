@@ -66,6 +66,24 @@ body
 
 		text-align: right
 
+	.menu-item
+		padding: 0px 12px
+
+		&:hover
+			text-decoration: none
+			text-underline-position: unset
+
+		&.activated
+			span
+				font-weight: bold
+
+			display: inline-block
+
+			background-color: $content-bg-color
+			border: 2px solid $border-color
+			margin-top: -2px
+			/* border-radius: 15px */
+
 	&.mobile
 		display: grid
 		grid-template-columns: auto auto auto
@@ -79,27 +97,22 @@ body
 				span
 					text-decoration: none
 
-				background-color: hsl(0, 0%, 25%)
+				background-color: $content-bg-color
+				border: 0px
+				margin-top: 0px
+
+				color: $fg-color
 
 				/* border-radius: 50px */
 
-.menu-item
-	padding: 0px 12px
+#mobile-tools-link
+	border-radius: 0px 12px 0px 0px
 
-	&:hover
-		text-decoration: none
-		text-underline-position: unset
+#mobile-learning-link
+	border-radius: 12px 12px 0px 0px
 
-	&.activated
-		span
-			font-weight: bold
-
-		display: inline-block
-
-		background-color: $content-bg-color
-		border: 2px solid $border-color
-		margin-top: -2px
-		/* border-radius: 15px */
+#mobile-about-link
+	border-radius: 12px 0px 0px 0px
 
 #bars-menu-link
 	display: none
@@ -131,6 +144,8 @@ a
 		margin: auto
 
 		width: 230px
+
+		margin-bottom: -1px
 
 #menu-expansion
 	grid-area: menu-expansion
@@ -314,6 +329,9 @@ ul
 
 	.close
 		outline: none !important
+
+	.content-row
+		border-top: 0px
 	
 
 // Up to 320px: Slightly smaller font size
