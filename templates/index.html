@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>FINA PHO • Fine Art Phone Photography</title>
+
+		<!-- FINA PHO Icon -->
+		<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+		<!-- <meta charset="utf-8"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="static/css/finapho_master.css">
+	</head>
+	<body>
+		<!-- Photo Viewer -->
+		<!-- Photo 1 -->
+		<div class="modal fade" id="photo-1" tabindex="-1" role="dialog" aria-labelledby="photo-1" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (1).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 2 -->
+		<div class="modal fade" id="photo-2" tabindex="-1" role="dialog" aria-labelledby="photo-2" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (2).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					The Poignter
+				</div>
+
+				<!-- This is just to make the "close" action (Boostrap) work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 3 -->
+		<div class="modal fade" id="photo-3" tabindex="-1" role="dialog" aria-labelledby="photo-3" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (3).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 4 -->
+		<div class="modal fade" id="photo-4" tabindex="-1" role="dialog" aria-labelledby="photo-4" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (4).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 5 -->
+		<div class="modal fade" id="photo-5" tabindex="-1" role="dialog" aria-labelledby="photo-5" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (5).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 6 -->
+		<div class="modal fade" id="photo-6" tabindex="-1" role="dialog" aria-labelledby="photo-6" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (6).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 7 -->
+		<div class="modal fade" id="photo-7" tabindex="-1" role="dialog" aria-labelledby="photo-7" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (7).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 8 -->
+		<div class="modal fade" id="photo-8" tabindex="-1" role="dialog" aria-labelledby="photo-8" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (8).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 9 -->
+		<div class="modal fade" id="photo-9" tabindex="-1" role="dialog" aria-labelledby="photo-9" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (9).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 10 -->
+		<div class="modal fade" id="photo-10" tabindex="-1" role="dialog" aria-labelledby="photo-10" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (10).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 11 -->
+		<div class="modal fade" id="photo-11" tabindex="-1" role="dialog" aria-labelledby="photo-11" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (11).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 12 -->
+		<div class="modal fade" id="photo-12" tabindex="-1" role="dialog" aria-labelledby="photo-12" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (12).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					Loving Forward
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 13 -->
+		<div class="modal fade" id="photo-13" tabindex="-1" role="dialog" aria-labelledby="photo-13" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (13).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 14 -->
+		<div class="modal fade" id="photo-14" tabindex="-1" role="dialog" aria-labelledby="photo-14" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (14).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					La Ranja
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 15 -->
+		<div class="modal fade" id="photo-15" tabindex="-1" role="dialog" aria-labelledby="photo-15" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (15).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 16 -->
+		<div class="modal fade" id="photo-16" tabindex="-1" role="dialog" aria-labelledby="photo-16" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (16).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 17 -->
+		<div class="modal fade" id="photo-17" tabindex="-1" role="dialog" aria-labelledby="photo-17" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (17).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 18 -->
+		<div class="modal fade" id="photo-18" tabindex="-1" role="dialog" aria-labelledby="photo-18" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (18).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					Watch Out
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 19 -->
+		<div class="modal fade" id="photo-19" tabindex="-1" role="dialog" aria-labelledby="photo-19" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (19).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 20 -->
+		<div class="modal fade" id="photo-20" tabindex="-1" role="dialog" aria-labelledby="photo-20" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (20).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 21 -->
+		<div class="modal fade" id="photo-21" tabindex="-1" role="dialog" aria-labelledby="photo-21" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (21).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 22 -->
+		<div class="modal fade" id="photo-22" tabindex="-1" role="dialog" aria-labelledby="photo-22" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (22).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 23 -->
+		<div class="modal fade" id="photo-23" tabindex="-1" role="dialog" aria-labelledby="photo-23" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (23).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 24 -->
+		<div class="modal fade" id="photo-24" tabindex="-1" role="dialog" aria-labelledby="photo-24" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (24).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 25 -->
+		<div class="modal fade" id="photo-25" tabindex="-1" role="dialog" aria-labelledby="photo-25" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (25).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 26 -->
+		<div class="modal fade" id="photo-26" tabindex="-1" role="dialog" aria-labelledby="photo-26" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (26).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 27 -->
+		<div class="modal fade" id="photo-27" tabindex="-1" role="dialog" aria-labelledby="photo-27" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (27).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					Illumicat
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 28 -->
+		<div class="modal fade" id="photo-28" tabindex="-1" role="dialog" aria-labelledby="photo-28" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (28).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 29 -->
+		<div class="modal fade" id="photo-29" tabindex="-1" role="dialog" aria-labelledby="photo-29" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (29).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 30 -->
+		<div class="modal fade" id="photo-30" tabindex="-1" role="dialog" aria-labelledby="photo-30" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (30).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 31 -->
+		<div class="modal fade" id="photo-31" tabindex="-1" role="dialog" aria-labelledby="photo-31" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (31).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 32 -->
+		<div class="modal fade" id="photo-32" tabindex="-1" role="dialog" aria-labelledby="photo-32" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (32).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Photo 33 -->
+		<div class="modal fade" id="photo-33" tabindex="-1" role="dialog" aria-labelledby="photo-33" aria-hidden="true">
+			<div class="viewer-container">
+				<div class="viewer-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+                </div>
+
+				<div class="viewer-photo">
+					<img src="static/images/photos/photo (33).jpg">
+				</div>
+				
+				<div class="viewer-label">
+					
+				</div>
+
+				<!-- This is just to make the "close" action work (it's display: none)-->
+				<div class="modal-dialog"></div>
+			</div>
+		</div>
+
+		<!-- Page -->
+		<div class="page-container">
+			<div class="header">
+				<div class="menu left">
+					<a href="tools.html" id="header-tools-link" class="menu-item">
+						<i id="header-tools-icon" class="fas fa-box-open"></i> <span>TOOLS</span>
+					</a>
+					<a href="learning.html" id="header-learning-link" class="menu-item">
+						<i id="header-learning-icon" class="fab fa-leanpub"></i> <span>LEARNING</span>
+					</a>
+				</div>
+
+				<div class="name">
+					<a href="index.html">
+						FINA <i class="fas fa-mobile"></i> PHO
+					</a>
+				</div>
+
+				<div class="menu right">
+					<a href="about.html" id="header-about-link" class="menu-item">
+						<i id="header-about-icon" class="fas fa-info-circle"></i> <span>ABOUT</span>
+					</a>
+
+					<a href="#menu-expansion" data-toggle="collapse" aria-controls="menu-expansion" aria-expanded="false" aria-label="Toggle navigation" id="bars-menu-link" class="collapsed menu-item">
+						<i id="bars-menu-icon" class="fas fa-bars"></i>
+					</a>
+				</div>
+			</div>
+
+			<div class="phone-top">
+				<img src="static/images/phone_top.svg">
+			</div>
+
+			<div id="menu-expansion" class="collapse">
+				<div class="menu mobile">
+					<a href="tools.html" id="mobile-tools-link" class="menu-item">
+						<i id="mobile-tools-icon" class="fas fa-box-open"></i> <span>TOOLS</span>
+					</a>
+					<a href="learning.html" id="mobile-learning-link" class="menu-item">
+						<i id="mobile-learning-icon" class="fab fa-leanpub"></i> <span>LEARNING</span>
+					</a>
+	
+					<a href="about.html" id="mobile-about-link" class="menu-item">
+						<i id="mobile-about-icon" class="fas fa-info-circle"></i> <span>ABOUT</span>
+					</a>
+				</div>
+			</div>
+			
+			<div class="content-row">
+				<div class="content">
+					<a href="#photo-1" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (1).jpg" width="450px">
+					</a>
+					<a href="#photo-2" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (2).jpg" width="450px">
+					</a>
+					<a href="#photo-3" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (3).jpg" width="450px">
+					</a>
+					<a href="#photo-4" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (4).jpg" width="450px">
+					</a>
+					<a href="#photo-5" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (5).jpg" width="450px">
+					</a>
+					<a href="#photo-6" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (6).jpg" width="450px">
+					</a>
+					<a href="#photo-7" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (7).jpg" width="450px">
+					</a>
+					<a href="#photo-8" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (8).jpg" width="450px">
+					</a>
+					<a href="#photo-9" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (9).jpg" width="450px">
+					</a>
+					<a href="#photo-10" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (10).jpg" width="450px">
+					</a>
+					<a href="#photo-11" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (11).jpg" width="450px">
+					</a>
+					<a href="#photo-12" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (12).jpg" width="450px">
+					</a>
+					<a href="#photo-13" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (13).jpg" width="450px">
+					</a>
+					<a href="#photo-14" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (14).jpg" width="450px">
+					</a>
+					<a href="#photo-15" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (15).jpg" width="450px">
+					</a>
+					<a href="#photo-16" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (16).jpg" width="450px">
+					</a>
+					<a href="#photo-17" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (17).jpg" width="450px">
+					</a>
+					<a href="#photo-18" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (18).jpg" width="450px">
+					</a>
+					<a href="#photo-19" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (19).jpg" width="450px">
+					</a>
+					<a href="#photo-20" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (20).jpg" width="450px">
+					</a>
+					<a href="#photo-21" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (21).jpg" width="450px">
+					</a>
+					<a href="#photo-22" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (22).jpg" width="450px">
+					</a>
+					<a href="#photo-23" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (23).jpg" width="450px">
+					</a>
+					<a href="#photo-24" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (24).jpg" width="450px">
+					</a>
+					<a href="#photo-25" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (25).jpg" width="450px">
+					</a>
+					<a href="#photo-26" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (26).jpg" width="450px">
+					</a>
+					<a href="#photo-27" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (27).jpg" width="450px">
+					</a>
+					<a href="#photo-28" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (28).jpg" width="450px">
+					</a>
+					<a href="#photo-29" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (29).jpg" width="450px">
+					</a>
+					<a href="#photo-30" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (30).jpg" width="450px">
+					</a>
+					<a href="#photo-31" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (31).jpg" width="450px">
+					</a>
+					<a href="#photo-32" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (32).jpg" width="450px">
+					</a>
+					<a href="#photo-33" data-toggle="modal">
+						<img class="thumbnail" src="static/images/thumbnails/thumbnail (33).jpg" width="450px">
+					</a>
+				</div>
+			</div>
+
+			<div class="footer">
+				Copyright © 2018 Hyuri Pimentel. All rights reserved.
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+	</body>
+</html>
