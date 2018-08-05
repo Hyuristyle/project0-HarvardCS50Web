@@ -1,1 +1,7 @@
 Design/
+
+finapho.sublime-project
+finapho.sublime-workspace
+
+*.py[co]
+__pycache__/
