@@ -69,9 +69,13 @@ body
 	.menu-item
 		padding: 0px 12px
 
+		border: 2px solid transparent
+
 		&:hover
 			text-decoration: none
 			text-underline-position: unset
+
+			/* border: 2px solid $border-color-005 */
 
 		&.activated
 			span
@@ -80,7 +84,7 @@ body
 			display: inline-block
 
 			background-color: $content-bg-color
-			border: 2px solid $border-color
+			border: 2px solid $border-color-01
 			margin-top: -2px
 			/* border-radius: 15px */
 
@@ -135,7 +139,7 @@ a
 	background-position: top
 	background-repeat: no-repeat
 
-	border-bottom: 1px solid $border-color
+	border-bottom: 1px solid $border-color-015
 
 	img
 		//vertical-align: bottom
@@ -206,7 +210,7 @@ a
 
 	padding: 12px 20px
 
-	border-top: 1px solid $border-color
+	border-top: 1px solid $border-color-015
 
 	background-color: $bg-color
 
