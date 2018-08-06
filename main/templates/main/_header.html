@@ -11,12 +11,15 @@
 	</div>
 
 	<div class="name">
-		<a href="{% url 'main:index' %}">
+		<a href="{% url 'main:index' %}" class="menu-item">
 			FINA <i class="fas fa-mobile"></i> PHO
 		</a>
 	</div>
 
 	<div class="menu right">
+		<!-- Django version of adding the "activated" class to and removing href from active menu-item. This version needs that this be added to all menu-item instances -->
+		<!-- {% url "main:about" as about_url %}
+		<a {% if request.get_full_path != about_url %}href="{% url 'main:about' %}"{% endif %} id="header-about-link" class="menu-item {% if request.get_full_path == about_url %}activated{% endif %}"> -->
 		<a href="{% url 'main:about' %}" id="header-about-link" class="menu-item">
 			<i id="header-about-icon" class="fas fa-info-circle"></i> <span>ABOUT</span>
 		</a>
@@ -45,3 +48,21 @@
 		</a>
 	</div>
 </div>
+
+<!-- JS version of adding the "activated" class to and removing href from active menu-item instances -->
+<script type="text/javascript">
+	var menu_items = document.getElementsByClassName("menu-item");
+
+	for (var i = 0; i < menu_items.length; i++) {
+		var counter = 0;
+		if (menu_items[i].getAttribute("href") === window.location.pathname) {
+			menu_items[i].classList.add("activated");
+			menu_items[i].removeAttribute("href");
+			counter += 1;
+		}
+
+		if (counter === 3) {
+			break;
+		}
+	}
+</script>
