@@ -5,12 +5,13 @@ Web Programming with Python and JavaScript (Harvard's CS50)
 #### About
 FINA PHO (Fine Art Phone Photography) is a personal fine art phone photography gallery.
 
-Not dynamic and written almost purely in HTML, CSS(Sass) and Bootstrap 4, for the sake of Project 0's scope and requirements. The only exceptions are the "Open Sans" font(through the Google Fonts API) and icons from Font Awesome, which were used.
+Now written in Django, HTML, Sass/CSS, Bootstrap 4, and JavaScript. It uses the Open Sans font from Google Fonts API, and icons from Font Awesome.
+It was originally static and written purely in HTML, Sass/CSS and Bootstrap 4, for the sake of Project 0's scope and requirements, but now it's been refactored to use Django and its templating system.
 
 #### index.html:
 Contains the photo gallery itself.
 
-The photo viewer(opened when you click on a thumbnail) is a heavily modified Bootstrap modal.
+The photo viewer(opened when you click on a thumbnail) is a heavily modified Bootstrap modal(Needs to be replaced with a proper viewer).
 
 #### about.html:
 Contains a little bit of trivia about the website and the author.
