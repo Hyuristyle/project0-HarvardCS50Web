@@ -1,0 +1,84 @@
+@import _finapho_variables
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+.page-container
+	height: 100vh
+
+.content-row
+	grid-template-columns: auto
+	grid-template-areas: "content"
+
+	padding: 6px 0px
+
+	align-self: stretch
+
+	background-color: $content-bg-color
+
+.content
+	display: block
+
+	width: 800px
+
+	h1
+		margin: 1.5rem 0px 0px 0px
+
+	h5
+		text-align: left
+		font-weight: bold
+
+	p
+		text-align: justify
+
+.profile-pic
+	display: block
+	float: left
+	margin-right: 12px
+
+	width: 100px
+
+	border: 2px solid $fg-color
+	border-radius: 15px
+
+%miniature
+	display: block
+	float: none
+	height: 100px
+	margin: 0px auto
+
+.video-miniature
+	@extend %miniature
+
+.keepcase-miniature
+	@extend %miniature
+	border-radius: 5px
+
+	border: 2px solid $fg-color
+
+.channel-miniature
+	@extend %miniature
+	border-radius: 50%
+
+.col-items
+	text-align: center
+	font-size: 16px
+	margin-bottom: 32px
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+// Media Queries
+
+// Up to 856px
+@media (max-width: 856px)
+	.content
+		width: auto
+		margin: 0px 20px
+
+		p
+			img
+				margin-right: 16px
+
+// Up to 570px
+@media (max-width: 570px)
+	.content
+		h1
+			margin: 1.5rem 0px 1.5rem 0px

@@ -1,0 +1,404 @@
+@import _finapho_variables
+@import url("https://fonts.googleapis.com/css?family=Open+Sans")
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+// For debugging the layout
+//*
+//	border: 1px solid red
+
+body
+	background-color: $bg-color
+
+	margin: 0px
+	
+	font-family: "Open Sans", Helvetica, Arial, Sans-Serif
+	font-size: 100%
+
+.page-container
+	display: grid
+	grid-template-rows: 46px max-content max-content auto 46px
+	grid-template-areas: "header" "phone-top" "menu-expansion" "content-row" "footer"
+	align-items: baseline
+
+.header
+	grid-area: header
+	padding: 0px 8px
+	
+	display: grid
+	grid-template-areas: "menu-left name menu-right"
+	grid-template-columns: 36% auto 36%
+
+	color: $fg-color
+
+	background-color: $bg-color
+
+.name
+	grid-area: name
+
+	vertical-align: middle
+	text-align: center
+
+	font-size: 1.2em
+	font-weight: bold
+	letter-spacing: 3px
+
+	line-height: 58px
+
+	a
+		&:hover
+			text-decoration-line: none
+			text-underline-position: unset
+
+.menu
+	font-size: 0.9em
+
+	line-height: 58px
+	vertical-align: middle
+
+	&.left
+		grid-area: menu-left
+		
+		text-align: left
+
+	&.right
+		grid-area: menu-right
+
+		text-align: right
+
+	.menu-item
+		padding: 0px 12px
+
+		&:hover
+			text-decoration: none
+			text-underline-position: unset
+
+		&.activated
+			span
+				font-weight: bold
+
+			display: inline-block
+
+			background-color: $content-bg-color
+			border: 2px solid $border-color
+			margin-top: -2px
+			/* border-radius: 15px */
+
+	&.mobile
+		display: grid
+		grid-template-columns: auto auto auto
+
+		text-align: center
+
+		.menu-item
+			padding: 0px
+
+			&.activated
+				span
+					text-decoration: none
+
+				background-color: $content-bg-color
+				border: 0px
+				margin-top: 0px
+
+				color: $fg-color
+
+				/* border-radius: 50px */
+
+#mobile-tools-link
+	border-radius: 0px 12px 0px 0px
+
+#mobile-learning-link
+	border-radius: 12px 12px 0px 0px
+
+#mobile-about-link
+	border-radius: 12px 0px 0px 0px
+
+#bars-menu-link
+	display: none
+
+a
+	text-decoration: none
+	color: inherit
+
+	&:hover
+		text-decoration-line: underline
+		text-underline-position: under
+		color: inherit
+
+	&:active
+		text-decoration: none
+		// text-underline-position: unset
+
+.phone-top
+	grid-area: phone-top
+	background-position: top
+	background-repeat: no-repeat
+
+	border-bottom: 1px solid $border-color
+
+	img
+		//vertical-align: bottom
+		display: block
+
+		margin: auto
+
+		width: 230px
+
+		margin-bottom: -2px
+
+#menu-expansion
+	grid-area: menu-expansion
+	
+	background-color: $fg-color
+	color: $bg-color
+
+.content-row
+	grid-area: content-row
+	display: grid
+
+	grid-template-columns: auto auto auto
+	grid-template-areas: ". content ."
+
+	// border-top: 1px solid darkgray
+	border-bottom: 1px solid darkgray
+	// padding: 3px 0px
+
+	background-color: $middle-gray
+
+.content
+	grid-area: content
+	
+	text-align: center
+
+	display: grid
+
+	grid-template-columns: auto auto auto
+	grid-template-rows: auto auto auto
+	grid-gap: 3px
+
+	margin: 0px auto
+
+	justify-content: center
+
+	a
+		text-decoration-line: underline
+
+.thumbnail
+	display: block
+	
+	max-width: 100%
+	height: auto
+	width: auto\9 // ie8
+
+	//width: 33.333333333333584vw
+	
+	//border: 5px solid black
+
+	//border-radius: 0 5px 0 0
+	//border-top-right-radius: 5px
+
+.photo-grid-item
+	width: 337px
+
+.footer
+	grid-area: footer
+
+	padding: 12px 20px
+
+	border-top: 1px solid $border-color
+
+	background-color: $bg-color
+
+	text-align: center
+
+	color: #444444
+	font-size: 0.7em
+	font-weight: bold
+
+	a
+		&:hover
+			text-decoration: underline
+
+ul
+	list-style-type: disc
+	text-align: left
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// Photo Viewer customizations (Bootstrap)
+
+.modal
+	background-color: black
+	color: white
+
+	padding-right: 0px !important
+
+.modal-dialog
+	display: none
+
+.close
+	line-height: 20px
+
+	color: white
+	font-weight: normal
+
+	&:hover,
+	&:active,
+	&:visited,
+	&:focus
+		color: white
+
+.viewer-container
+	grid-area: viewer-container
+	display: grid
+	grid-template-rows: 44px auto 44px
+	grid-template-areas: "viewer-header" "viewer-photo" "viewer-label"
+
+	align-self: center
+
+	height: 100%
+
+.viewer-header
+	grid-area: viewer-header
+
+.viewer-photo
+	grid-area: viewer-photo
+
+	display: grid
+
+	img
+		display: block
+		
+		max-height: 100%
+		max-width: 100%
+
+		margin: auto
+
+.viewer-label
+	font-size: 80%
+	text-align: center
+
+	line-height: 44px
+
+.modal-content
+	background-color: rgba(0, 0, 0, 0)
+	color: white
+
+	font-size: 14px
+
+	width: auto
+
+.modal-body
+	max-width: max-content
+	margin: 32px
+	padding: 0px
+
+.modal-footer
+	padding: 0px
+	border-top: 0px
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// Media Queries
+
+// Up to 839px
+@media (max-width: 839px)
+	#header-about-link
+		display: none
+
+	#header-tools-link
+		display: none
+
+	#header-learning-link
+		display: none
+
+	#bars-menu-link
+		display: inline-block
+		font-size: 1.4em
+		vertical-align: sub
+
+	.phone-top
+		img
+			width: 200px
+
+	.header
+		grid-template-columns: 22% auto 22%
+
+	a
+		&:hover
+			text-decoration: none	
+
+	.close
+		outline: none !important
+
+	.content-row
+		border-top: 0px
+	
+
+// Up to 320px: Slightly smaller font size
+@media (max-width: 320px)
+	.menu
+		&.mobile
+			font-size: 0.8em	
+
+// Never show mobile menu from 840px and up
+@media (min-width: 840px)
+	#menu-expansion
+		display: none
+
+// Increase Grid Gaps from 1440px and up
+@media (min-width: 1440px)
+	.content
+		grid-gap: 24px
+
+// Increase Grid Gaps from 1920px and up
+@media (min-width: 1920px)
+	.content
+		grid-gap: 32px
+
+	body
+		font-size: 150%
+
+	.menu-item
+		padding: 0px 54px
+
+	.menu
+		&.left,
+		&.right
+			text-align: center
+
+	.phone-top
+		img
+			width: 320px
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// Custom Button
+
+button,
+.button
+	display: inline-block
+	background-color: Transparent
+
+	border: 2px solid #262600
+	border-radius: 5px
+
+	outline: none
+
+	margin: 12px
+	padding: 10px 20px
+
+	color: #262600
+
+	font-size: 24px
+	font-weight: bold
+
+	cursor: pointer
+
+button,
+.button
+	&:hover
+		background-color: rgba(0, 0, 0, 0.05)
+
+button,
+.button
+	&:active
+		background-color: rgba(0, 0, 0, 0.1)
