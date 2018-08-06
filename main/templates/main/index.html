@@ -1,29 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title>FINA PHO • Fine Art Phone Photography</title>
+{% extends "main/base_layout.html" %}
+{% load static %}
 
-		<!-- FINA PHO Icon -->
-		<link rel="shortcut icon" type="image/png" href="favicon.png"/>
-		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+{% block title %}
+	Fine Art Phone Photography
+{% endblock %}
 
-		<!-- <meta charset="utf-8"> -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<!-- Font Awesome -->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-
-		<!-- Bootstrap -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-
-		<!-- CSS -->
-		{% load static %}
-		<link rel="stylesheet" type="text/css" href="{% static 'main/css/finapho_master.css' %}">
-	</head>
-	<body>
-		<!-- Photo Viewer -->
-		{% for photo_entry in photo_entries %}
+<!-- Photo Viewer -->
+{% block photo_viewer %}
+	{% for photo_entry in photo_entries %}
 		<div class="modal fade" id="photo-{{ photo_entry.position }}" tabindex="-1" role="dialog" aria-labelledby="photo-{{ photo_entry.position }}" aria-hidden="true">
 			<div class="viewer-container">
 				<div class="viewer-header">
@@ -33,9 +17,7 @@
                 </div>
 
 				<div class="viewer-photo">
-					{% load static %}
 					<img src="{% static 'main/images/photos/' %}{{ photo_entry.photo }}">
-					}
 				</div>
 				
 				<div class="viewer-label">
@@ -46,167 +28,14 @@
 				<div class="modal-dialog"></div>
 			</div>
 		</div>
-		{% endfor %}
+	{% endfor %}
+{% endblock %}
 
-		<!-- Page -->
-		<div class="page-container">
-			<div class="header">
-				<div class="menu left">
-					<a href="tools.html" id="header-tools-link" class="menu-item">
-						<i id="header-tools-icon" class="fas fa-box-open"></i> <span>TOOLS</span>
-					</a>
-					<a href="learning.html" id="header-learning-link" class="menu-item">
-						<i id="header-learning-icon" class="fab fa-leanpub"></i> <span>LEARNING</span>
-					</a>
-				</div>
-
-				<div class="name">
-					<a href="index.html">
-						FINA <i class="fas fa-mobile"></i> PHO
-					</a>
-				</div>
-
-				<div class="menu right">
-					<a href="about.html" id="header-about-link" class="menu-item">
-						<i id="header-about-icon" class="fas fa-info-circle"></i> <span>ABOUT</span>
-					</a>
-
-					<a href="#menu-expansion" data-toggle="collapse" aria-controls="menu-expansion" aria-expanded="false" aria-label="Toggle navigation" id="bars-menu-link" class="collapsed menu-item">
-						<i id="bars-menu-icon" class="fas fa-bars"></i>
-					</a>
-				</div>
-			</div>
-
-			<div class="phone-top">
-				<img src="static/images/phone_top.svg">
-			</div>
-
-			<div id="menu-expansion" class="collapse">
-				<div class="menu mobile">
-					<a href="tools.html" id="mobile-tools-link" class="menu-item">
-						<i id="mobile-tools-icon" class="fas fa-box-open"></i> <span>TOOLS</span>
-					</a>
-					<a href="learning.html" id="mobile-learning-link" class="menu-item">
-						<i id="mobile-learning-icon" class="fab fa-leanpub"></i> <span>LEARNING</span>
-					</a>
-	
-					<a href="about.html" id="mobile-about-link" class="menu-item">
-						<i id="mobile-about-icon" class="fas fa-info-circle"></i> <span>ABOUT</span>
-					</a>
-				</div>
-			</div>
-			
-			<div class="content-row">
-				<div class="content">
-					<a href="#photo-1" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (1).jpg" width="450px">
-					</a>
-					<a href="#photo-2" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (2).jpg" width="450px">
-					</a>
-					<a href="#photo-3" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (3).jpg" width="450px">
-					</a>
-					<a href="#photo-4" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (4).jpg" width="450px">
-					</a>
-					<a href="#photo-5" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (5).jpg" width="450px">
-					</a>
-					<a href="#photo-6" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (6).jpg" width="450px">
-					</a>
-					<a href="#photo-7" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (7).jpg" width="450px">
-					</a>
-					<a href="#photo-8" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (8).jpg" width="450px">
-					</a>
-					<a href="#photo-9" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (9).jpg" width="450px">
-					</a>
-					<a href="#photo-10" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (10).jpg" width="450px">
-					</a>
-					<a href="#photo-11" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (11).jpg" width="450px">
-					</a>
-					<a href="#photo-12" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (12).jpg" width="450px">
-					</a>
-					<a href="#photo-13" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (13).jpg" width="450px">
-					</a>
-					<a href="#photo-14" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (14).jpg" width="450px">
-					</a>
-					<a href="#photo-15" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (15).jpg" width="450px">
-					</a>
-					<a href="#photo-16" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (16).jpg" width="450px">
-					</a>
-					<a href="#photo-17" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (17).jpg" width="450px">
-					</a>
-					<a href="#photo-18" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (18).jpg" width="450px">
-					</a>
-					<a href="#photo-19" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (19).jpg" width="450px">
-					</a>
-					<a href="#photo-20" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (20).jpg" width="450px">
-					</a>
-					<a href="#photo-21" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (21).jpg" width="450px">
-					</a>
-					<a href="#photo-22" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (22).jpg" width="450px">
-					</a>
-					<a href="#photo-23" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (23).jpg" width="450px">
-					</a>
-					<a href="#photo-24" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (24).jpg" width="450px">
-					</a>
-					<a href="#photo-25" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (25).jpg" width="450px">
-					</a>
-					<a href="#photo-26" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (26).jpg" width="450px">
-					</a>
-					<a href="#photo-27" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (27).jpg" width="450px">
-					</a>
-					<a href="#photo-28" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (28).jpg" width="450px">
-					</a>
-					<a href="#photo-29" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (29).jpg" width="450px">
-					</a>
-					<a href="#photo-30" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (30).jpg" width="450px">
-					</a>
-					<a href="#photo-31" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (31).jpg" width="450px">
-					</a>
-					<a href="#photo-32" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (32).jpg" width="450px">
-					</a>
-					<a href="#photo-33" data-toggle="modal">
-						<img class="thumbnail" src="static/images/thumbnails/thumbnail (33).jpg" width="450px">
-					</a>
-				</div>
-			</div>
-
-			<div class="footer">
-				Copyright © 2018 Hyuri Pimentel. All rights reserved.
-			</div>
-		</div>
-
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-	</body>
-</html>
+<!-- Content -->
+{% block content %}
+	{% for photo_entry in photo_entries %}
+		<a href="#photo-{{ photo_entry.position }}" data-toggle="modal">
+			<img class="thumbnail" src="{% static 'main/images/thumbnails/' %}{{ photo_entry.thumbnail }}" width="450px">
+		</a>
+	{% endfor %}
+{% endblock %}

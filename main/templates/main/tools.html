@@ -1,238 +1,165 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title>FINA PHO • Tools</title>
+{% extends "main/base_layout.html" %}
+{% load static %}
 
-		<!-- FINA PHO Icon -->
-		<link rel="shortcut icon" type="image/png" href="favicon.png"/>
-		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+{% block title %}
+	Tools
+{% endblock %}
 
-		<!-- <meta charset="utf-8"> -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% block stylesheets %}
+	<link rel="stylesheet" type="text/css" href="{% static 'main/css/finapho_text_content.css' %}">
+{% endblock %}
 
-		<!-- Font Awesome -->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+<!-- Content -->
+{% block content %}
+	<h1>Tools</h1>
 
-		<!-- Bootstrap -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<h5>The Basics</h5>
+	<p>
+		A phone;<br>
+		Your own unique way of seeing the world coupled with a little bit of knowledge;<br>
+		Lots of sunlight/available light;
+	</p>
+	<p>
+		A set of mini lenses(made for phones), if you want to get serious;<br>
+		A tripod(with an adapter), or mini tripod. Especially needed if you plan on shooting long exposure and/or HDR;<br>
+		A flashlight—or any other portable light fixture—is quite fun for experimenting in dark places;
+	</p>
+	<p>
+		If you're <i>really</i> serious about it, it might be a good idea to try calibrating the colors of your phone screen. There are devices and apps to help you with that but since I have not done this on my phone, I won't recommend any specific products. Searching for "screen color calibration" should give you a starting point(look for the smaller and more portable devices because, not only they'll be more than enough, but also most color calibration systems are quite expensive).
+	</p>
 
-		<!-- CSS -->
-		<link rel="stylesheet" type="text/css" href="static/css/finapho_master.css">
-		<link rel="stylesheet" type="text/css" href="static/css/finapho_text_content.css">
-	</head>
-	<body>
-		<!-- Page -->
-		<div class="page-container">
-			<div class="header">
-				<div class="menu left">
-					<div id="header-tools-link" class="menu-item activated">
-						<i id="header-tools-icon" class="fas fa-box-open"></i> <span>TOOLS</span>
-					</div>
-					<a href="learning.html" id="header-learning-link" class="menu-item">
-						<i id="header-learning-icon" class="fab fa-leanpub"></i> <span>LEARNING</span>
-					</a>
-				</div>
+	<br>
 
-				<div class="name">
-					<a href="index.html">
-						FINA <i class="fas fa-mobile"></i> PHO
-					</a>
-				</div>
-
-				<div class="menu right">
-					<a href="about.html" id="header-about-link" class="menu-item">
-						<i id="header-about-icon" class="fas fa-info-circle"></i> <span>ABOUT</span>
-					</a>
-
-					<a href="#menu-expansion" data-toggle="collapse" aria-controls="menu-expansion" aria-expanded="false" aria-label="Toggle navigation" id="bars-menu-link" class="collapsed menu-item">
-						<i id="bars-menu-icon" class="fas fa-bars"></i>
-					</a>
-				</div>
-			</div>
-
-			<div class="phone-top">
-				<img src="static/images/phone_top.svg">
-			</div>
-
-			<div id="menu-expansion" class="collapse">
-				<div class="menu mobile">
-					<div id="mobile-tools-link" class="menu-item activated">
-						<i id="mobile-tools-icon" class="fas fa-box-open"></i> <span>TOOLS</span>
-					</div>
-					<a href="learning.html" id="mobile-learning-link" class="menu-item">
-						<i id="mobile-learning-icon" class="fab fa-leanpub"></i> <span>LEARNING</span>
-					</a>
+	<h5>Apps</h5>
+	<p>
+		Camera:
+	</p>
+	<ul>
+		<li>
+			<b>Built-In Camera App</b> — Can get you started, but you'll really need manual controls to get the results you envision, so this one will very quickly become a limitation;
+		</li>
+		<li>
+			<b>Lightroom CC</b> — Manual controls, and RAW;
+		</li>
+		<li>
+			<b>Manual Camera</b> (Android-only) — Manual controls, and RAW;
+		</li>
+		<li>
+			<b>Manual — RAW Camera</b> (iOS-only) — Manual controls, and RAW;
+		</li>
+		<li>
+			<b>Hypocam</b> — Dedicated to Black & White. Several features, including colored filters.
+		</li>
+	</ul>
 	
-					<a href="about.html" id="mobile-about-link" class="menu-item">
-						<i id="mobile-about-icon" class="fas fa-info-circle"></i> <span>ABOUT</span>
-					</a>
-				</div>
-			</div>
-			
-			<div class="content-row">
-				<div class="content">
-					<h1>Tools</h1>
+	<br>
 
-					<h5>The Basics</h5>
-					<p>
-						A phone;<br>
-						Your own unique way of seeing the world coupled with a little bit of knowledge;<br>
-						Lots of sunlight/available light;
-					</p>
-					<p>
-						A set of mini lenses(made for phones), if you want to get serious;<br>
-						A tripod(with an adapter), or mini tripod. Especially needed if you plan on shooting long exposure and/or HDR;<br>
-						A flashlight—or any other portable light fixture—is quite fun for experimenting in dark places;
-					</p>
-					<p>
-						If you're <i>really</i> serious about it, it might be a good idea to try calibrating the colors of your phone screen. There are devices and apps to help you with that but since I have not done this on my phone, I won't recommend any specific products. Searching for "screen color calibration" should give you a starting point(look for the smaller and more portable devices because, not only they'll be more than enough, but also most color calibration systems are quite expensive).
-					</p>
+	<p>
+		Editing:
+	</p>
+	<ul>
+		<li>
+			<b>Built-In Photo Editor</b> — In most cases, I don't do any post-processing and try to get most of the shot in-camera, but when I do want to make adjustments, it's usually a slight Crop, Contrast or Saturation adjustment, so the built-in app is more than enough;
+		</li>
+		<li>
+			<b>Snapseed</b> — Lots of tools and great controls. It has double exposure, selective adjustments, curves, film grain and many more;
+		</li>
+		<li>
+			<b>Lightroom CC</b> — The presets system is quite useful for small adjustments;
+		</li>
+		<li>
+			<b>Pixlr</b> — Many tools and lots of presets. Some presets are pretty nice. It also has a nice collage tool;
+		</li>
+		<li>
+			<b>Hypocam</b> — Dedicated to Black & White. Several features, including colored filters and film grain;
+		</li>
+		<li>
+			<b>LightX</b> — The controls aren't great but I like its splash(selective adjustment) tool.
+		</li>
+	</ul>
 
-					<br>
+	<br>
 
-					<h5>Apps</h5>
-					<p>
-						Camera:
-					</p>
-					<ul>
-						<li>
-							<b>Built-In Camera App</b> — Can get you started, but you'll really need manual controls to get the results you envision, so this one will very quickly become a limitation;
-						</li>
-						<li>
-							<b>Lightroom CC</b> — Manual controls, and RAW;
-						</li>
-						<li>
-							<b>Manual Camera</b> (Android-only) — Manual controls, and RAW;
-						</li>
-						<li>
-							<b>Manual — RAW Camera</b> (iOS-only) — Manual controls, and RAW;
-						</li>
-						<li>
-							<b>Hypocam</b> — Dedicated to Black & White. Several features, including colored filters.
-						</li>
-					</ul>
-					
-					<br>
+	<p>
+		Scouting:
+	</p>
+	<ul>
+		<li>
+			<b>Sun Locator</b> (Android-only) — Shows you at what position the Sun will be throughout the day, and other info;
+		</li>
+		<li>
+			<b>Sun Scout</b> (iOS-only) — Shows you at what position the Sun will be throughout the day, and other info.
+		</li>
+	</ul>
+	<p>
+		I'd recommend you spend some time with each one of them to see which ones you prefer.
+	</p>
 
-					<p>
-						Editing:
-					</p>
-					<ul>
-						<li>
-							<b>Built-In Photo Editor</b> — In most cases, I don't do any post-processing and try to get most of the shot in-camera, but when I do want to make adjustments, it's usually a slight Crop, Contrast or Saturation adjustment, so the built-in app is more than enough;
-						</li>
-						<li>
-							<b>Snapseed</b> — Lots of tools and great controls. It has double exposure, selective adjustments, curves, film grain and many more;
-						</li>
-						<li>
-							<b>Lightroom CC</b> — The presets system is quite useful for small adjustments;
-						</li>
-						<li>
-							<b>Pixlr</b> — Many tools and lots of presets. Some presets are pretty nice. It also has a nice collage tool;
-						</li>
-						<li>
-							<b>Hypocam</b> — Dedicated to Black & White. Several features, including colored filters and film grain;
-						</li>
-						<li>
-							<b>LightX</b> — The controls aren't great but I like its splash(selective adjustment) tool.
-						</li>
-					</ul>
-
-					<br>
-
-					<p>
-						Scouting:
-					</p>
-					<ul>
-						<li>
-							<b>Sun Locator</b> (Android-only) — Shows you at what position the Sun will be throughout the day, and other info;
-						</li>
-						<li>
-							<b>Sun Scout</b> (iOS-only) — Shows you at what position the Sun will be throughout the day, and other info.
-						</li>
-					</ul>
-					<p>
-						I'd recommend you spend some time with each one of them to see which ones you prefer.
-					</p>
-
-					<p>
-						Compatibility table:
-					</p>
-					<table class="table table-sm table-responsive">
-						<thead>
-							<tr>
-								<th scope="col" style="width: 200px">App</th>
-								<th scope="col" style="width: 100px">Android</th>
-								<th scope="col" style="width: 100px">iOS</th>
-							</tr>
-						</thead>
-						
-						<tbody>
-							<tr>
-								<td class="table-light">Snapseed</td>
-								<td class="table-success">Yes</td>
-								<td class="table-success">Yes</td>
-							</tr>
-							<tr>
-								<td class="table-light">Lightroom CC</td>
-								<td class="table-success">Yes</td>
-								<td class="table-success">Yes</td>
-							</tr>
-							<tr>
-								<td class="table-light">Pixlr</td>
-								<td class="table-success">Yes</td>
-								<td class="table-success">Yes</td>
-							</tr>
-							<tr>
-								<td class="table-light">Hypocam</td>
-								<td class="table-success">Yes</td>
-								<td class="table-success">Yes</td>
-							</tr>
-							<tr>
-								<td class="table-light">LightX</td>
-								<td class="table-success">Yes</td>
-								<td class="table-success">Yes</td>
-							</tr>
-							<tr>
-								<td class="table-light">Manual Camera</td>
-								<td class="table-success">Yes</td>
-								<td class="table-danger">No</td>
-							</tr>
-							<tr>
-								<td class="table-light">Sun Locator</td>
-								<td class="table-success">Yes</td>
-								<td class="table-danger">No</td>
-							</tr>
-							<tr>
-								<td class="table-light">Manual</td>
-								<td class="table-danger">No</td>
-								<td class="table-success">Yes</td>
-							</tr>
-							<tr>
-								<td class="table-light">Sun Scout</td>
-								<td class="table-danger">No</td>
-								<td class="table-success">Yes</td>
-							</tr>
-						</tbody>
-					</table>
-					
-					<br>
-
-					<h5>The Extra Mile</h5>
-					<p>
-						If you want to go deeper with your post-processing, for the desktop I recommend <a href="https://www.gimp.org/">GIMP</a> + the <a href="https://gmic.eu/">G'MIC</a> and <a href="http://registry.gimp.org/node/25219">Resynthesizer</a> plug-ins.
-					</p>
-				</div>
-			</div>
-
-			<div class="footer">
-				Copyright © 2018 Hyuri Pimentel. All rights reserved.
-			</div>
-		</div>
-
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<p>
+		Compatibility table:
+	</p>
+	<table class="table table-sm table-responsive">
+		<thead>
+			<tr>
+				<th scope="col" style="width: 200px">App</th>
+				<th scope="col" style="width: 100px">Android</th>
+				<th scope="col" style="width: 100px">iOS</th>
+			</tr>
+		</thead>
 		
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-	</body>
-</html>
+		<tbody>
+			<tr>
+				<td class="table-light">Snapseed</td>
+				<td class="table-success">Yes</td>
+				<td class="table-success">Yes</td>
+			</tr>
+			<tr>
+				<td class="table-light">Lightroom CC</td>
+				<td class="table-success">Yes</td>
+				<td class="table-success">Yes</td>
+			</tr>
+			<tr>
+				<td class="table-light">Pixlr</td>
+				<td class="table-success">Yes</td>
+				<td class="table-success">Yes</td>
+			</tr>
+			<tr>
+				<td class="table-light">Hypocam</td>
+				<td class="table-success">Yes</td>
+				<td class="table-success">Yes</td>
+			</tr>
+			<tr>
+				<td class="table-light">LightX</td>
+				<td class="table-success">Yes</td>
+				<td class="table-success">Yes</td>
+			</tr>
+			<tr>
+				<td class="table-light">Manual Camera</td>
+				<td class="table-success">Yes</td>
+				<td class="table-danger">No</td>
+			</tr>
+			<tr>
+				<td class="table-light">Sun Locator</td>
+				<td class="table-success">Yes</td>
+				<td class="table-danger">No</td>
+			</tr>
+			<tr>
+				<td class="table-light">Manual</td>
+				<td class="table-danger">No</td>
+				<td class="table-success">Yes</td>
+			</tr>
+			<tr>
+				<td class="table-light">Sun Scout</td>
+				<td class="table-danger">No</td>
+				<td class="table-success">Yes</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<br>
+
+	<h5>The Extra Mile</h5>
+	<p>
+		If you want to go deeper with your post-processing, for the desktop I recommend <a href="https://www.gimp.org/">GIMP</a> + the <a href="https://gmic.eu/">G'MIC</a> and <a href="http://registry.gimp.org/node/25219">Resynthesizer</a> plug-ins.
+	</p>
+{% endblock %}
