@@ -1,3 +1,7 @@
+![image](https://user-images.githubusercontent.com/18584014/62817045-9f667280-bb06-11e9-9836-41c42e8e4ff0.png)
+![image](https://user-images.githubusercontent.com/18584014/62817053-b4db9c80-bb06-11e9-8031-953dcd4b977c.png)
+
+
 # Project 0
 
 Web Programming with Python and JavaScript (Harvard's CS50)
