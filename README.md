@@ -4,7 +4,7 @@
 
 # Project 0
 
-Web Programming with Python and JavaScript (Harvard's CS50)
+Web Programming with Python and JavaScript (Harvard's CS50Web)
 
 #### About
 FINA PHO (Fine Art Phone Photography) is a personal fine art phone photography gallery.
